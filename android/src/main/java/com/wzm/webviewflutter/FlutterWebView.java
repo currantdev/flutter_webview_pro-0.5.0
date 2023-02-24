@@ -533,7 +533,7 @@ public class FlutterWebView implements PlatformView, MethodCallHandler{
     if (WebViewFlutterPlugin.activity==null||!FileUtil.checkSDcard(WebViewFlutterPlugin.activity)) {
       return;
     }
-    String[] selectPicTypeStr = {"拍照", "图库"};
+    String[] selectPicTypeStr = {"Zrób zdjęcie", "Wybierz z plików"};
     new AlertDialog.Builder(WebViewFlutterPlugin.activity)
             .setOnCancelListener(new ReOnCancelListener())
             .setItems(selectPicTypeStr,

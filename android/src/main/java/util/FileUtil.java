@@ -305,7 +305,7 @@ public class FileUtil {
     public static boolean checkSDcard(Context context){
         boolean flag = Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED);
         if (!flag) {
-            Toast.makeText(context,"请插入手机存储卡再使用本功能", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"External SD", Toast.LENGTH_SHORT).show();
         }
         return flag;
     }
